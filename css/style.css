@@ -1,0 +1,184 @@
+:root {
+    --primario: #bca4f5;
+    --primarioOscuro: #89119D;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233, 187, 2);
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Globales **/
+body {
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-top: 0rem;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+    text-align: initial;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 25%;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+    margin-top: 16rem;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+    text-align: initial;
+    margin-top:1rem;
+}
+.main{
+    margin-top: 10px;
+}
+/** Header **/
+#header{
+    position: fixed;
+    background-color: var(--blanco);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 71rem;
+    margin-top: -10rem;
+    top: 10rem;
+    
+    
+}
+#header-img{
+    position: fixed;
+    width: 14rem;
+        
+}
+/** Footer **/
+.footer {
+    background-color: var(--blanco);
+    padding: 1rem;
+    margin-top: 5rem;
+}
+.footer__texto {
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2.2rem;
+    color: black;
+   
+}
+/** Navegacion **/
+
+#nav-bar {
+    font-family: var(--fuentePrincipal);
+    color: var(--negro);
+    font-size: 3rem;
+    margin-right: 14rem;
+    word-spacing: 1cm;
+    
+}
+.nav2{
+        word-spacing: 0cm;
+
+    }
+
+
+    #nav-bar {
+    color: var(--secundario);
+}
+
+#nav {
+  display: block;
+  margin-bottom: 20px;
+  
+}
+
+
+
+  
+  #features .card {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  #features .card .content {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+
+/** Bloques **/
+.bloques {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .bloques {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.bloque {
+    text-align: center;
+    border: 10px solid #C00;
+}
+
+.bloque__titulo {
+    text-align: center;
+    
+}
+.bloque__imagen{
+    width: 70%;
+}
+
+/** Pagina del Producto **/
+
+
+
+form#form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 3rem;
+    margin: 7px;
+}
+
+#how-it-works {
+    text-align:center;
+    padding: 70px;
+  }
